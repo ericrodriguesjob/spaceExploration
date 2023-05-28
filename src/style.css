@@ -32,6 +32,11 @@ body {
 .shadow-b {
   box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
 }
+.text-w-md {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 #root {
   position: relative;
@@ -59,6 +64,7 @@ header nav ul li {
 header nav ul li a {
   font-size: .9rem;
   color: var(--dark); 
+  opacity: .8;
 }
 header nav ul li a:hover {
   color: var(--primary);
@@ -72,7 +78,70 @@ header #login {
   font-weight: 500;
   border-radius: 2rem;
 }
+header #bar {
+  display: none;
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  padding: .3rem .5rem;
+  border-radius: .3rem;
+}
+header #bar:hover {
+  background: var(--primary);
+  color: var(--light);
+}
 
 .hero {
   height: 100vh;
+  background: url(./bg-gradient.svg) center center no-repeat;
+  background-size: cover;
+}
+.hero > .container {
+  height: 100%;
+  text-align: center;
+}
+.hero h1 {
+  margin-top: 5rem;
+  font-size: 3rem;
+  color: var(--dark);
+}
+.hero h1 span {
+  color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  header #bar {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    top: 4rem;
+    left: 0;
+    padding: .8rem;
+    transform: translateY(-100vh);
+  }
+  header nav.active {
+    transition: transform .5s linear;
+    transform: translateY(0%);
+  }
+  header nav ul {
+    background: var(--light);
+    box-shadow: 0 0 6px rgba(0,0,0,.2);
+    border-radius: .3rem;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul li { 
+    display: flex;
+    margin: .5rem 0;
+  }
+  header #login {
+    margin: 0;
+  }
 }

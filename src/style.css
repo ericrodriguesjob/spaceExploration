@@ -7,6 +7,7 @@
   --alert: #FF8C49;
   --dark: #0F172A;
   --grey: #E7E5FC;
+  --purple-light: #D4D0FA;
   --light: #F8F9FA;
 }
 
@@ -45,7 +46,7 @@ body {
 
 #root {
   position: relative;
-  top: 3.9rem;
+  top: 3.8rem;
 }
 
 header {
@@ -64,7 +65,7 @@ header .brand img {
 }
 header nav ul li {
   display: inline-block;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 header nav ul li a {
   font-size: .9rem;
@@ -74,12 +75,22 @@ header nav ul li a {
 header nav ul li a:hover {
   color: var(--primary);
 }
+header a[href="/apod"] {
+  font-weight: 500;
+}
+header #news {
+  background: var(--purple-light);
+  color: var(--primary);
+  font-size: .8rem;
+  padding: .2rem .5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
 header #login {
   background: var(--primary);
   color: var(--light);
   padding: .6rem 1.4rem;
   margin-left: 1.5rem;
-  font-size: 1rem;
   font-weight: 500;
   border-radius: 2rem;
 }
@@ -95,34 +106,40 @@ header #bar:hover {
   color: var(--light);
 }
 
+/*
+* Home Style
+*/
 .hero {
   height: 100vh;
   background: url(./bg-gradient.svg) center center no-repeat;
   background-size: cover;
+}
+.hero > .container {
   position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero img {
   width: 3rem;
-  position: absolute;
   z-index: -100;
-  opacity: .8;
+  position: absolute;
+  opacity: .6;
   animation: imgHeroAnimation 1.5s linear infinite alternate;
 }
 .hero .astroA {
   top: 3rem;
-  left: 5rem;
+  left: 0rem;
 }
 .hero .astroB {
-  bottom: 7rem;
-  right: 5rem;
-}
-.hero > .container {
-  height: 100%;
-  text-align: center;
+  top: 3rem;
+  right: 0rem;
 }
 .hero h1 {
-  margin-top: 5rem;
-  font-size: 4rem;
+  margin-top: -5rem;
+  font-size: 3rem;
   color: var(--dark);
 }
 .hero h1 span {
@@ -142,7 +159,7 @@ header #bar:hover {
 .hero-btn a:first-child {
   background: var(--primary);
   color: var(--light);
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 2rem;
 }
 .hero-btn a:last-child {
@@ -156,6 +173,8 @@ header #bar:hover {
 .hero-btn a:last-child:hover {
   opacity: .8;
 }
+
+
 
 /*
 * Animations
@@ -172,6 +191,15 @@ header #bar:hover {
 /*
 * Media Queries
 */
+@media (min-width: 1024px) {
+  .hero .astroA {
+    left: 3rem;
+  }
+  .hero .astroB {
+    right: 3rem;
+  }
+}
+
 @media (max-width: 1024px) {
   header #bar {
     display: block;

@@ -99,6 +99,22 @@ header #bar:hover {
   height: 100vh;
   background: url(./bg-gradient.svg) center center no-repeat;
   background-size: cover;
+  position: relative;
+}
+.hero img {
+  width: 3rem;
+  position: absolute;
+  z-index: -100;
+  opacity: .8;
+  animation: imgHeroAnimation 1.5s linear infinite alternate;
+}
+.hero .astroA {
+  top: 3rem;
+  left: 5rem;
+}
+.hero .astroB {
+  bottom: 7rem;
+  right: 5rem;
 }
 .hero > .container {
   height: 100%;
@@ -117,7 +133,45 @@ header #bar:hover {
   line-height: 1.4;
   color: var(--secondary);
 }
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.hero-btn a:first-child {
+  background: var(--primary);
+  color: var(--light);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.hero-btn a:last-child {
+  background: var(--dark);
+  color: var(--light);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  opacity: .4;
+}
+.hero-btn a:first-child:hover,
+.hero-btn a:last-child:hover {
+  opacity: .8;
+}
 
+/*
+* Animations
+*/
+@keyframes imgHeroAnimation {
+  from {
+    transform: translateY(.5rem);
+  } 
+  to {
+    transform: translateY(0rem);
+  }
+}
+
+/*
+* Media Queries
+*/
 @media (max-width: 1024px) {
   header #bar {
     display: block;

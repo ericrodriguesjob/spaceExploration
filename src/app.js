@@ -31,7 +31,7 @@ function paginate(url) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('header nav a')
+  const links = document.querySelectorAll('header a')
 
   links.forEach(link => {
     link.onclick = e => {

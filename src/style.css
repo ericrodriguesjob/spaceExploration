@@ -37,6 +37,11 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
+.text-w-lg {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 #root {
   position: relative;
@@ -101,11 +106,16 @@ header #bar:hover {
 }
 .hero h1 {
   margin-top: 5rem;
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--dark);
 }
 .hero h1 span {
   color: var(--primary);
+}
+.hero p {
+  margin: 2rem auto;
+  line-height: 1.4;
+  color: var(--secondary);
 }
 
 @media (max-width: 1024px) {

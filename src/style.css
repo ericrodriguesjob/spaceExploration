@@ -6,12 +6,13 @@
   --success: #0D9488;
   --alert: #FF8C49;
   --dark: #0F172A;
+  --danger: #B04759;
   --grey: #E7E5FC;
   --purple-light: #D4D0FA;
   --light: #F8F9FA;
   --white: #FFFFFF;
   --pink: #ff8ba7;
-  --blue: #30A2FF;
+  --blue: #3B82F6;
 }
 
 * {
@@ -290,6 +291,76 @@ header #bar:hover {
   width: 100%;
   border-radius: .3rem;
 }
+
+.prices {
+  text-align: center;
+}
+.prices h2, .prices p {
+  color: var(--secondary);
+}
+.prices p {
+  opacity: .8;
+  margin: 2rem auto;
+}
+.prices .box-price {
+  display: grid;
+  grid-template-columns: 35% 35%;
+  justify-content: center;
+  margin: 4rem auto;
+}
+.prices .box-price > div {
+  padding: 1rem 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--secondary);
+}
+.prices .box-price > div:last-child {
+  background: var(--dark);
+  color: var(--light);
+}
+.prices .box-price > div:last-child p,
+.prices .box-price > div:last-child .include {
+  color: var(--grey);
+}
+.prices .box-price p {
+  margin: 0;
+}
+.prices .box-price .plan {
+  font-size: 1.4rem;
+}
+.prices .box-price .price {
+  font-size: 2.4rem;
+}
+.prices .box-price a {
+  width: 100%;
+  padding: 1rem;
+  background: var(--blue);
+  color: var(--grey);
+  text-align: center;
+  font-weight: 700;
+  border-radius: 2rem;
+  margin: 1rem 0;
+} 
+.prices .box-price a:hover {
+  opacity: .8;
+}
+.prices .box-price .include {
+  color: var(--dark);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.prices .box-price .fa-check-double {
+  color: var(--success);
+}
+.prices .box-price .fa-xmark {
+  color: var(--danger);
+}
+.prices .box-price ul li {
+  margin: 1rem 0;
+}
+
 /*
 * Animations
 */

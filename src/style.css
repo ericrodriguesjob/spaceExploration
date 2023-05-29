@@ -134,11 +134,11 @@ header #bar:hover {
 }
 .hero .astroA {
   top: 3rem;
-  left: 0rem;
+  left: 3rem;
 }
 .hero .astroB {
   top: 3rem;
-  right: 0rem;
+  right: 3rem;
 }
 .hero h1 {
   margin-top: -5rem;
@@ -177,6 +177,11 @@ header #bar:hover {
   opacity: .8;
 }
 
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .features > .container {
   margin: 2rem 0;
 }
@@ -255,14 +260,6 @@ header #bar:hover {
 /*
 * Media Queries
 */
-@media (min-width: 1024px) {
-  .hero .astroA {
-    left: 3rem;
-  }
-  .hero .astroB {
-    right: 3rem;
-  }
-}
 
 @media (max-width: 1024px) {
   header #bar {

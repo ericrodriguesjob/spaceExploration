@@ -33,9 +33,6 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
 }
-.shadow-b {
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
-}
 .text-w-md {
   width: 600px;
   max-width: 100%;
@@ -57,6 +54,7 @@ header {
   width: 100%;
   z-index: 999;
   background: var(--light);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
 }
 header > .container {
   display: flex;
@@ -114,8 +112,15 @@ header #bar:hover {
 */
 .hero {
   height: 100vh;
-  background: url(./bg-gradient.svg) center center no-repeat;
-  background-size: cover;
+  position: relative;
+}
+.bg-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .hero > .container {
   position: relative;
@@ -125,9 +130,9 @@ header #bar:hover {
   flex-direction: column;
   justify-content: center;
 }
-.hero img {
+.hero .astroA, .hero .astroB {
   width: 3rem;
-  z-index: -100;
+  z-index: 1;
   position: absolute;
   opacity: .6;
   animation: imgHeroAnimation 1.5s linear infinite alternate;
@@ -181,6 +186,7 @@ header #bar:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--white);
 }
 .features > .container {
   margin: 2rem 0;
@@ -245,7 +251,7 @@ header #bar:hover {
 }
 
 .news {
-  height: 100vh;
+  height: 80vh;
 }
 .news .container {
   display: flex;
@@ -263,6 +269,22 @@ header #bar:hover {
 }
 .content-news h2 {
   color: var(--secondary);
+}
+.content-news p {
+  line-height: 1.5;
+  color: var(--secondary);
+  margin: 2rem 0;
+  text-align: justify;
+  opacity: .8;
+}
+.content-news ul i {
+  color: var(--primary);
+  margin-right: .5rem;
+}
+.content-news ul li {
+  color: var(--dark);
+  opacity: .7;
+  margin-bottom: 1rem;
 }
 .news .image-news img {
   width: 100%;

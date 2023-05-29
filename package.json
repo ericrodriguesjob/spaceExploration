@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.3.2"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "vite": "^4.3.2",
+    "vite-plugin-static-copy": "^0.15.0"
   }
 }

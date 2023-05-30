@@ -32,17 +32,19 @@ function paginate(url) {
 
 document.addEventListener('DOMContentLoaded', () => {
   const responsiveMenu = document.querySelector('header nav')
-  const links  = document.querySelectorAll('header a')
-  const btnBar = document.querySelector('#bar') 
+  const btnBar = document.querySelector('#bar')
 
   btnBar.onclick = () => responsiveMenu.classList.toggle('active')
 
-  links.forEach(link => {
-    link.onclick = e => {
+  document.body.addEventListener('click', e => {
+    if (e.target.matches('[data-link]')) {
       e.preventDefault()
-      paginate(link.getAttribute('href'))
+      paginate(e.target.href)
+      responsiveMenu.classList.remove('active')
     }
   })
+
+
 
   router()
 })

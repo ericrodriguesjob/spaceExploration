@@ -40,12 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target.matches('[data-link]')) {
       e.preventDefault()
       paginate(e.target.href)
+
       responsiveMenu.classList.remove('active')
       document.querySelector('.box-loading').classList.add('active')
     }
   })
-
-
 
   router()
 })

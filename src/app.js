@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault()
       paginate(e.target.href)
       responsiveMenu.classList.remove('active')
+      document.querySelector('.box-loading').classList.add('active')
     }
   })
 

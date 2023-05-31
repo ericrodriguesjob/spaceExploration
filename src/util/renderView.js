@@ -11,6 +11,24 @@ export default function renderView() {
           root.innerHTML = data
         }
       })
+    },
+
+    gallery() {
+      getView({
+        url: '../views/gallery.html',
+        success( data ) {
+          root.innerHTML = data
+        }
+      })
+    },
+
+    apod() {
+      getView({
+        url: '../views/apod.html',
+        success( data ) {
+          root.innerHTML = data
+        }
+      })
     }
   }
 }

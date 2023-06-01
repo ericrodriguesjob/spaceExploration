@@ -18,7 +18,7 @@ function renderAPIToHTML({ title, date, media_type, url, explanation }) {
     <h3>${title}</h3>
     <span>${date}</span>
     ${(media_type === 'video') ? 
-    `<iframe src=${url} scrolling="no" frameborder="0"></iframe>`
+    `<img src="gallery01.jpg" alt="APOD Image"></img>`
     :
     `<img src="${url}" alt="APOD Image"></img>`
     }

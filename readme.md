@@ -20,7 +20,7 @@ $ git clone https://github.com/EricNeves/spaceExploration.git
 $ cd spaceExploration && pnpm install
 
 # Start
-$ pnpm start
+$ pnpm preview
 # Run dev
 $ pnpm run dev
 

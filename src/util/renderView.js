@@ -1,31 +1,4 @@
-import { getView, fetchAPOD } from './ajax'
-
-function fetchAPI() {
-  const url = `https://api.nasa.gov/planetary/apod?api_key=3AXsuVMwkt39C3DFsah6PZtGbQBuXgre46ISpntw`
-
-  fetchAPOD({
-    url,
-    success(data) {
-      renderAPIToHTML(data)
-    }
-  })
-}
-
-function renderAPIToHTML({ title, date, media_type, url, explanation }) {
-  const boxAPOD = document.querySelector('.box-apod')
-
-  boxAPOD.innerHTML = `
-    <h3>${title}</h3>
-    <span>${date}</span>
-    ${(media_type === 'video') ? 
-    `<img src="gallery01.jpg" alt="APOD Image"></img>`
-    :
-    `<img src="${url}" alt="APOD Image"></img>`
-    }
-    <p>${explanation.split('.')[0]}...</p>
-    <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">Read more...</a>
-  `
-}
+import { getView } from './ajax'
 
 export default function renderView() {
   const root = document.getElementById('root')
@@ -50,7 +23,6 @@ export default function renderView() {
     },
 
     apod() {
-      fetchAPI()
       getView({
         url: '../views/apod.html',
         success( data ) {

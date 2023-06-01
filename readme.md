@@ -6,6 +6,8 @@ Aplicação desenvolvida com <b>HTML, CSS (Grid, Flexbox) e Javascript</b>, junt
 
 O projeto consiste na utilização do recurso de <b>SPA (Single Page Application) com Vanilla JS.</b>
 
+Website: [Space Exploration](https://space-exploration-en.vercel.app/)
+
 ![](.github/screenA.png)
 ![](.github/screenB.png)
 

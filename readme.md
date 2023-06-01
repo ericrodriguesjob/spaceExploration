@@ -1,5 +1,8 @@
 <img src=".github/logo.svg" width="200px" />
 
+![License](https://img.shields.io/github/license/EricNeves/spaceExploration?color=success&logo=appveyor&logoColor=success&style=for-the-badge)
+![Commit](https://img.shields.io/github/last-commit/EricNeves/spaceExploration?color=important&logo=appveyor&logoColor=important&style=for-the-badge)
+
 ### Space Exploration 🔭
 
 Aplicação desenvolvida com <b>HTML, CSS (Grid, Flexbox) e Javascript</b>, juntamente com a utilização da API da Nasa <b>[APOD](https://apod.nasa.gov/apod/astropix.html) (Astronomy Picture of the Day)</b>, do uso do <b>Vite JS para gerar o bundle do projeto</b>, e entre outras tecnologias.
@@ -34,4 +37,4 @@ $ pnpm run dev
 
 #### License 📑
 
-![License](https://img.shields.io/github/license/ericneves/convertMyMoney-01?color=red&logo=appveyor&logoColor=red&style=flat-square)
+![License](https://img.shields.io/github/license/EricNeves/spaceExploration?color=success&logo=appveyor&logoColor=success&style=for-the-badge)

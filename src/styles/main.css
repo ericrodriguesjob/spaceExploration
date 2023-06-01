@@ -326,7 +326,8 @@ body {
   .prices h2,
   .cta h1,
   .blog h2,
-  .apod h2 {
+  .apod h2,
+  .gallery h2 {
     font-size: 1.1rem;
   }
 

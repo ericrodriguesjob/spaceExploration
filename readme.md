@@ -9,3 +9,27 @@ O projeto consiste na utilização do recurso de <b>SPA (Single Page Application
 ![](.github/screenA.png)
 ![](.github/screenB.png)
 
+#### Executando ⚙️
+
+```sh
+
+# Clone
+$ git clone https://github.com/EricNeves/spaceExploration.git
+
+# Install dependencies
+$ cd spaceExploration && pnpm install
+
+# Start
+$ pnpm start
+# Run dev
+$ pnpm run dev
+
+```
+
+#### Author 🐧
+
+* [Eric Neves Rodrigues](https://www.instagram.com/ericneves_dev/)
+
+#### License 📑
+
+![License](https://img.shields.io/github/license/ericneves/convertMyMoney-01?color=red&logo=appveyor&logoColor=red&style=flat-square)

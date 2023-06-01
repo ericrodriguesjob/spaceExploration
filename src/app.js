@@ -11,10 +11,7 @@ function router() {
   let match = matches.find(match => match.isMatch)
 
   if (!match) {
-    match = {
-      route: routes[0],
-      isMatch: true
-    }
+    history.replaceState("", "", "/")
   }
 
   match.route.view()

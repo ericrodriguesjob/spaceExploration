@@ -1,0 +1,85 @@
+.login {
+  height: 80vh;
+}
+
+.login > .container {
+  text-align: center;
+  color: var(--secondary);
+}
+
+.login h2 {
+  font-size: 1.2rem;
+  opacity: .8;
+}
+
+.box-login {
+  width: 500px;
+  max-width: 100%;
+  background: var(--white);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+
+.box-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.box-form input {
+  width: 100%;
+  padding: .6rem .5rem;
+  margin: .5rem 0;
+  font-size: 1.1rem;
+  border-radius: .3rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.box-form input:focus {
+  outline: 1px solid var(--primary);
+}
+
+.box-form input[type=submit] {
+  background: var(--dark);
+  color: var(--light);
+  outline: none;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+
+.box-form input[type=submit]:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+  opacity: .9;
+}
+
+.box-login p {
+  margin-top: 2rem;
+}
+
+.box-login a {
+  color: var(--blue);
+}
+
+.box-login ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-login ul li {
+  background: rgba(167, 91, 237, .8);
+  padding: 1rem 2rem;
+  border-radius: .3rem;
+  margin-top: 3rem;
+}
+.box-login ul li:hover {
+  opacity: .8;
+}
+.box-login li a {
+  color: var(--white);
+}

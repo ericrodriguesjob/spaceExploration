@@ -12,5 +12,9 @@ export const routes = [
   {
     path: '/apod',
     view() { renderView().apod() }
+  },
+  {
+    path: '/login',
+    view() { renderView().login() }
   }
 ]

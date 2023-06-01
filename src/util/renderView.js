@@ -57,6 +57,15 @@ export default function renderView() {
           root.innerHTML = data
         }
       })
+    },
+
+    login() {
+      getView({
+        url: '../views/login.html',
+        success( data ) {
+          root.innerHTML = data
+        }
+      })
     }
   }
 }

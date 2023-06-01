@@ -292,6 +292,10 @@ body {
   .blog .box-blog-articles {
     grid-template-columns: 1fr;
   }
+
+  .login input {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -323,5 +327,13 @@ body {
   .cta h1,
   .blog h2 {
     font-size: 1.1rem;
+  }
+
+  .box-login ul li {
+    margin-top: 1rem;
+  }
+  .box-login ul {
+    flex-direction: column;
+    justify-content: space-around;
   }
 }

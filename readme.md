@@ -9,7 +9,7 @@ O projeto consiste na utilização do recurso de <b>SPA (Single Page Application
 ![](.github/screenA.png)
 ![](.github/screenB.png)
 
-#### Executando ⚙️
+#### Executando 🛰
 
 ```sh
 
@@ -26,7 +26,7 @@ $ pnpm run dev
 
 ```
 
-#### Author 🐧
+#### Author 👽
 
 * [Eric Neves Rodrigues](https://www.instagram.com/ericneves_dev/)
 

@@ -441,6 +441,7 @@ header #bar:hover {
 .contact textarea {
   font-size: 1rem;
 }
+.contact textarea:focus,
 .contact input:focus {
   outline: 1px solid var(--primary);
 }

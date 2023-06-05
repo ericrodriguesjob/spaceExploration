@@ -403,6 +403,60 @@ header #bar:hover {
   font-size: .9rem;
 }
 
+.contact {
+  text-align: center;
+  border-radius: .2rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2, .contact p {
+  color: var(--secondary);
+}
+.contact p {
+  margin-top: 2rem;
+}
+.box-contact-form {
+  margin: 2rem 0;
+  width: 800px;
+  max-width: 100%;
+}
+.contact label {
+  color: var(--secondary);
+  text-align: left;
+  display: block;
+  font-size: 1.1rem;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  padding: .6rem .5rem;
+  margin: .5rem 0;
+  font-size: 1.1rem;
+  border-radius: .3rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact textarea {
+  font-size: 1rem;
+}
+.contact input:focus {
+  outline: 1px solid var(--primary);
+}
+.contact input[type=submit] {
+  background: var(--dark);
+  color: var(--light);
+  outline: none;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.contact input[type=submit]:hover {
+  outline: 1px solid rgba(0, 0, 0, 0.4);
+  opacity: .9;
+}
+
+
 footer {
   margin-top: 2rem;
   text-align: center;

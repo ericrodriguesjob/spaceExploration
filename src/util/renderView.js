@@ -7,6 +7,15 @@ function fetchAPI() {
     url,
     success(data) {
       renderAPIToHTML(data)
+    },
+    error(error) {
+      renderAPIToHTML({
+        title: 'Sorry, something went wrong',
+        date: new Date(),
+        explanation: '',
+        media_type: '',
+        url: 'https://img.icons8.com/?size=512&id=o98HlN3hzQOO&format=png'
+      })
     }
   })
 }

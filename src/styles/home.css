@@ -427,13 +427,13 @@ header #bar:hover {
   color: var(--secondary);
   text-align: left;
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .contact input, .contact textarea {
   width: 100%;
   padding: .6rem .5rem;
   margin: .5rem 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-radius: .3rem;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.2);

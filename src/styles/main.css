@@ -214,11 +214,6 @@ body {
   header #login {
     margin: 0;
   }
-
-  .card-features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .news {
     height: 100%;
   }
@@ -227,11 +222,8 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .card-features , .box-gallery,
   .blog .box-blog-articles {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .box-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -259,21 +251,16 @@ body {
     font-size: 1.8rem;
   }
 
-  .hero p {
-    font-size: .9rem;
-  }
-
-  .card-features {
-    grid-template-columns: 1fr;
-  }
-
-  .news p,
-  .news ul li {
-    font-size: .9rem;
-  }
-
+  .contact input, .contact textarea,
+  .news p, .hero p
+  .news ul li,
   .prices p {
     font-size: .9rem;
+  }
+
+  .contact label, .login input ,
+  .cta figcaption p {
+    font-size: 1rem;
   }
 
   .prices .box-price>div {
@@ -285,16 +272,9 @@ body {
     grid-template-columns: 100%;
   }
 
-  .cta figcaption p {
-    font-size: 1rem;
-  }
-
+  .card-features,
   .blog .box-blog-articles {
     grid-template-columns: 1fr;
-  }
-
-  .login input {
-    font-size: 1rem;
   }
 }
 

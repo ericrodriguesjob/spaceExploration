@@ -55,8 +55,6 @@ body {
   z-index: 999;
   background: var(--light);
   display: none;
-  top: 0;
-  left: 0;
 }
 .box-loading.active {
   display: block;

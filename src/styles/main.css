@@ -313,10 +313,12 @@ body {
   }
 
   .box-login ul li {
-    margin-top: 1rem;
+    width: 100%;
+    margin-top: -1rem;
   }
   .box-login ul {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 4rem;
   }
 }

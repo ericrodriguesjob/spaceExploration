@@ -59,6 +59,8 @@
 
 .box-login p {
   margin-top: 2rem;
+  text-align: left;
+  width: 100%;
 }
 
 .box-login a {
@@ -68,14 +70,20 @@
 .box-login ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .box-login ul li {
+  width: 49%;
   background: rgba(167, 91, 237, .8);
   padding: 1rem 2rem;
   border-radius: .3rem;
-  margin-top: 3rem;
+  margin: 2rem auto;
+}
+.box-form label {
+  color: var(--secondary);
+  width: 100%;
+  text-align: left;
 }
 .box-login ul li:hover {
   opacity: .8;

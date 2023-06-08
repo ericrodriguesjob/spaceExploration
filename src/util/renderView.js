@@ -14,7 +14,7 @@ function fetchAPI() {
         date: new Date(),
         explanation: '',
         media_type: '',
-        url: 'https://img.icons8.com/?size=512&id=o98HlN3hzQOO&format=png'
+        url: 'https://images.pexels.com/photos/9121365/pexels-photo-9121365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
       })
     }
   })

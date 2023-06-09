@@ -235,7 +235,16 @@ body {
   .prices .box-price {
     grid-template-columns: 50% 50%;
   }
-
+  .box-contact-content {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+  .box-contact-location iframe {
+    height: 40vh;
+  }
+  .box-contact-location li {
+    font-size: .8rem;
+  }
   .cta {
     text-align: center;
   }
@@ -260,7 +269,9 @@ body {
   .contact input, .contact textarea,
   .news p, .hero p
   .news ul li,
-  .prices p {
+  .prices p,
+  .contact p, 
+  footer p {
     font-size: .9rem;
   }
 

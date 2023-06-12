@@ -3,18 +3,26 @@ import renderView from './util/renderView'
 export const routes = [
   {
     path: '/',
-    view() { renderView().home() }
+    view() {
+      renderView().home()
+    }
   },
   {
     path: '/gallery',
-    view() { renderView().gallery() }
+    view() { 
+      renderView().gallery()  
+    }
   },
   {
     path: '/apod',
-    view() { renderView().apod() }
+    view() { 
+      renderView().apod() 
+    }
   },
   {
     path: '/login',
-    view() { renderView().login() }
+    view() { 
+      renderView().login() 
+    }
   }
 ]

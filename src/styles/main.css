@@ -36,18 +36,75 @@ body {
   margin: 0 auto;
   padding: 1rem 2rem;
 }
-
 .text-w-md {
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
 }
-
 .text-w-lg {
   width: 800px;
   max-width: 100%;
   margin: 0 auto;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  background: var(--light);
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand img {
+  width: 8rem;
+}
+header nav ul li {
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+header nav ul li a {
+  font-size: .9rem;
+  color: var(--dark); 
+  opacity: .8;
+}
+header nav ul li a:hover {
+  color: var(--primary);
+}
+header a[href="/apod"] {
+  font-weight: 500;
+}
+header #news {
+  background: var(--purple-light);
+  color: var(--primary);
+  font-size: .8rem;
+  padding: .2rem .5rem;
+  border-radius: 2rem;
+  font-weight: 700;
+}
+header #login {
+  background: var(--primary);
+  color: var(--light);
+  padding: .6rem 1.4rem;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  border-radius: 2rem;
+}
+header #bar {
+  display: none;
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  padding: .3rem .5rem;
+  border-radius: .3rem;
+}
+header #bar:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+
 
 .box-loading {
   width: 100%;
@@ -91,6 +148,32 @@ body {
   color: var(--primary);
   transform: rotateY(70deg);
   animation-delay: .4s;
+}
+
+footer {
+  margin-top: 4rem;
+  background: var(--dark);
+}
+footer > .container {
+  padding: 1.2rem 2rem;
+  color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+footer p {
+  font-size: .9rem;
+}
+footer ul li i {
+  font-size: 1.1rem;
+  color: var(--light);
+}
+footer ul li i:hover {
+  color: var(--primary);
 }
 
 @keyframes rotate {
@@ -292,6 +375,10 @@ body {
   .card-features,
   .blog .box-blog-articles {
     grid-template-columns: 1fr;
+  }
+
+  footer > .container {
+    padding: 1.5rem 1rem;
   }
 }
 

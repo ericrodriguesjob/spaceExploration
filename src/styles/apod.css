@@ -9,7 +9,7 @@
 .box-apod {
   width: 900px;
   max-width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin: 4rem auto;
   border: 1px solid var(--grey);
   border-radius: .3rem;
@@ -39,4 +39,37 @@
 }
 .box-apod a {
   color: var(--blue);
+}
+
+.loader-apod{
+  display: block;
+  position: relative;
+  height: 12px;
+  width: 80%;
+  border: 1px solid var(--dark);
+  background: var(--dark);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loader-apod::after {
+  content: '';
+  width: 40%;
+  height: 100%;
+  background: var(--primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0%);
+  }
 }

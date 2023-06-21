@@ -26,8 +26,10 @@ $ cd spaceExploration && pnpm install
 
 # Start
 $ pnpm preview
+
 # Run dev
 $ pnpm run dev
+
 
 ```
 

@@ -108,13 +108,12 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background: var(--white);
+  background: var(--dark);
   border-radius: .3rem;
-  border: 1px solid var(--grey);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
 .card-features article:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 16px rgba(0, 0, 0, .7);
 }
 .card-features article i {
   font-size: 2rem;
@@ -127,11 +126,11 @@
   border-radius: .3rem;
 }
 .card-features article span {
-  color: var(--secondary);
+  color: var(--purple-light);
   font-weight: 700;
 }
 .card-features article p {
-  color: var(--secondary);
+  color: var(--grey);
   opacity: .7;
 }
 .card-features article a {

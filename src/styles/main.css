@@ -152,6 +152,7 @@ header #bar:hover {
 
 footer {
   margin-top: 4rem;
+  bottom: 0;
   background: var(--dark);
 }
 footer > .container {

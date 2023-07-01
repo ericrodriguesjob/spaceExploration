@@ -403,14 +403,23 @@
 .contact input:focus {
   outline: 1px solid var(--primary);
 }
-.contact input[type=submit] {
+.contact button {
   background: var(--dark);
-  color: var(--light);
+  width: 100%;
+  padding: .6rem .5rem;
   outline: none;
+  border: none;
+  color: var(--light);
   cursor: pointer;
+  border-radius: .3rem;
+  font-size: 1rem;
   transition: all .1s ease;
 }
-.contact input[type=submit]:hover {
+.contact button i, 
+.contact button span {
+  margin: 0 .1rem;
+}
+.contact button:hover {
   outline: 1px solid rgba(0, 0, 0, 0.4);
   opacity: .9;
 }
